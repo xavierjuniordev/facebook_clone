@@ -5,7 +5,6 @@ const Container = styled.View`
     width: 40px;
     height: 40px;
     position: relative;
-    background-color: orange;
 `
 const User = styled.Image`
     width: 40px;

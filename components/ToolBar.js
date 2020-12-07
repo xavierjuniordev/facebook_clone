@@ -48,9 +48,15 @@ const Separator = styled.View`
   height: 26px;
   background: #f0f0f0;
 `;
+const BottonDivider = styled.View`
+  width: 100%;
+  height: 9px;
+  background: #f0f2f5;
+`
 
 const ToolBar = () => {
   return (
+    <>
     <Container>
       <Row>
         <Avatar source={user5} />
@@ -81,7 +87,9 @@ const ToolBar = () => {
         </Menu>
         <Separator />
       </Row>
-    </Container>
+    </Container>  
+    <BottonDivider/>
+    </> 
   );
 };
 

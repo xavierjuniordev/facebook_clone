@@ -3,6 +3,7 @@ import React from "react";
 import { ScrollView, StatusBar } from "react-native";
 import styled from "styled-components/native";
 import AppBar from "./components/AppBar";
+import Feed from "./components/Feed";
 import ToolBar from "./components/ToolBar";
 import Users from "./components/Users";
 import Story from "./components/Story";
@@ -26,6 +27,7 @@ const App = () => {
       <ToolBar/>
       <Users/>
       <Story/>
+      <Feed/>
       </ScrollView>
     </Container>
     </> 

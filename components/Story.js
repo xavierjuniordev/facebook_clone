@@ -84,12 +84,12 @@ const Story = () => {
         </Card>
 
         <Card>
-          <CardStory source={require("../assets/story2.jpg")} />
+          <CardStory source={require("../assets/story3.jpg")} />
           <CardUser>
-            <Avatar source={require("../assets/user2.jpg")} story={true} />
+            <Avatar source={require("../assets/user3.jpg")} story={true} />
           </CardUser>
           <CardFooter>
-              <Text>Luiza Torres</Text>
+              <Text>Christian Castro</Text>
           </CardFooter>
         </Card>
 

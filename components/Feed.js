@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import styled from "styled-components/native";
-import { Entypo, AntDesign } from "@expo/vector-icons";
+import { Entypo, AntDesign, MaterialCommunityIcons } from "@expo/vector-icons";
 import Avatar from "./Avatar";
 
 const Container = styled.View`
@@ -96,6 +96,12 @@ const Text = styled.Text`
   color: #424040;
 `;
 
+const BottonDivider = styled.View`
+  width: 100%;
+  height: 9px;
+  background: #f0f2f5;
+`;
+
 const Feed = () => {
   return (
     <>
@@ -147,10 +153,111 @@ const Feed = () => {
                   color="#424040"
                 />
               </Icon>
+              <Text>Curtir</Text>
+            </Button>
+
+            <Button>
+              <Icon>
+                <MaterialCommunityIcons 
+                  name="comment-outline"
+                  size={20}
+                  color="#424040"
+                />
+              </Icon>
+              <Text>Comentar</Text>
+            </Button>
+
+            <Button>
+              <Icon>
+                <MaterialCommunityIcons 
+                  name="share-outline"
+                  size={20}
+                  color="#424040"
+                />
+              </Icon>
+              <Text>Compartilhar</Text>
             </Button>
           </FooterMenu>
 
         </Footer>
+        <BottonDivider/>
+      </Container>
+
+      <Container>
+        <Header>
+          <Row>
+            <Avatar source={require("../assets/user3.jpg")} />
+            <View style={{ paddingLeft: 10 }}>
+              <User>Christian Castro</User>
+              <Row>
+                <Time>10m</Time>
+                <Entypo name="dot-single" size={14} color="#747476" />
+                <Entypo name="globe" size={12} color="#747476" />
+              </Row>
+            </View>
+          </Row>
+          <Entypo name="dots-three-horizontal" size={15} color="#222121" />
+        </Header>
+
+        <Post>Muito fazer oque a gente gosta, isso nos da uma liberdade de crescer,
+          com aquilo que achamos que é o nosso futuro.
+        </Post>
+        <Foto source={require('../assets/post1.jpg')}/>
+
+        <Footer>
+          <FooterCount>
+            <Row>
+              <IconCount>
+                  <AntDesign 
+                  name="like1"
+                  size={12}
+                  color="#ffffff"
+                  />
+              </IconCount>
+              <TextCount>460 curtidas</TextCount>
+            </Row>
+            <TextCount>150 comentários</TextCount>
+          </FooterCount>
+
+          <Separator />
+
+          <FooterMenu>
+            <Button>
+              <Icon>
+                <AntDesign 
+                  name="like2"
+                  size={20}
+                  color="#424040"
+                />
+              </Icon>
+              <Text>Curtir</Text>
+            </Button>
+
+            <Button>
+              <Icon>
+                <MaterialCommunityIcons 
+                  name="comment-outline"
+                  size={20}
+                  color="#424040"
+                />
+              </Icon>
+              <Text>Comentar</Text>
+            </Button>
+
+            <Button>
+              <Icon>
+                <MaterialCommunityIcons 
+                  name="share-outline"
+                  size={20}
+                  color="#424040"
+                />
+              </Icon>
+              <Text>Compartilhar</Text>
+            </Button>
+          </FooterMenu>
+
+        </Footer>
+        <BottonDivider/>
       </Container>
     </>
   );
